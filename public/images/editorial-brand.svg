@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" fill="none">
+  <rect width="1000" height="1200" fill="#FAFAFA"/>
+  <rect x="80" y="80" width="840" height="1040" stroke="#E5E5E5" stroke-width="2"/>
+  <line x1="500" y1="80" x2="500" y2="1120" stroke="#E5E5E5" stroke-width="1"/>
+  <rect x="240" y="240" width="520" height="720" fill="#000000"/>
+  <text x="500" y="610" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-size="42" letter-spacing="14">ALVERO</text>
+</svg>

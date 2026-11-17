@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --alvero-black: #000000;
+  --alvero-white: #ffffff;
+  --alvero-bg: #fafafa;
+  --alvero-border: #e5e5e5;
+  --alvero-muted: #777777;
+  --alvero-charcoal: #1a1a1a;
+}
+
+@theme inline {
+  --color-background: var(--alvero-bg);
+  --color-foreground: var(--alvero-black);
+  --color-border: var(--alvero-border);
+  --color-muted: var(--alvero-muted);
+  --font-sans: var(--font-sans-latin), var(--font-sans-arabic), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif-editorial), var(--font-sans-arabic), Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--alvero-white);
+  color: var(--alvero-black);
+}
+
+body {
+  background-color: var(--alvero-bg);
+  color: var(--alvero-black);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Luxury sharp architectural selection */
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Print optimization for Admin Invoices & Packing Slips */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
